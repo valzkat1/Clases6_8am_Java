@@ -1,0 +1,3 @@
+Nombre: Pepe
+Apellidos: Perez ppp
+Ciudad nacimiento: MAnizales
