@@ -1,5 +1,7 @@
 package org.fundacionview.controladores;
 
+import javax.annotation.PostConstruct;
+
 import org.fundacionview.modelos.ProductoCongelado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,14 @@ public class ControladorUno {
 
 	@Autowired
 	ProductoCongelado pc2;
+	
+	
+	@PostConstruct
+	public void PostConstruct() {
+		pc2.setFechaCaducidad("2023-10");
+		pc2.setFechaEnvasado("2021-10");
+		pc2.setPaisOrigen("Colombia");
+	}
 	
 	
 	@GetMapping("/")
